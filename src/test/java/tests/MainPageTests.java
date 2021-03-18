@@ -42,7 +42,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Story("Пользователь должен успешно воспользоваться оплатой без регистрации")
     @DisplayName("Проверить оплату без ригистрации")
-    public void checkPayWithoutRegistration(){
+    public void checkPaymentWithoutRegistration(){
     step("Открыть страницу и перейти к Оплате без регистрации", () -> {
         open("wallet/");
         $(byText("Оплатить без регистрации")).scrollTo(); });
@@ -52,7 +52,8 @@ public class MainPageTests extends TestBase {
         switchTo().window(1); });
 
     step("Проверить успешность выпонения теста", () ->
-        $("#master-content").should(text("Провайдер временно недоступен"))); //TODO Не реализован метод
+        $("#master-content").should(text("Провайдер временно недоступен")));
+        //TODO Не реализован метод, Провайдер временно недоступен
     }
 
     @Test

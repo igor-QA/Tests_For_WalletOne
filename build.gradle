@@ -61,18 +61,8 @@ test {
     systemProperty "chromeoptions.args","--disable-notifications" //увидомления выкл
     useJUnitPlatform()
 }
-/*
-task web(type: Test) {
+/*task web(type: Test) {
     useJUnitPlatform {
         includeTags 'web'
         //excludeTags 'api'
-    }
-}
-
-task api(type: Test) {
-    useJUnitPlatform {
-        includeTags 'api'
-        //excludeTags 'web'
-    }
-}
- */
+}*/
